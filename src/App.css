@@ -8,11 +8,10 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
   color: white;
 }
+
+.mySlides img{width: 100%}
 
 .App-title {
   font-size: 1.5em;
@@ -20,6 +19,10 @@
 
 .App-intro {
   font-size: large;
+}
+
+.w3-third img{
+  width: 100%;
 }
 
 @keyframes App-logo-spin {
