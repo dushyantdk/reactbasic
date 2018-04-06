@@ -25,7 +25,50 @@
   width: 100%;
 }
 
+.w3-black, .w3-hover-black:hover {
+    color: #424242!important;
+    background-color: #f5f5f5!important;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.mySlides{
+width: 100%;
+height: 500px;
+float: left;
+background-image: url(slider.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+}
+
+.slier_content{
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    width: 100%;
+}
+
+.slier_content h3{
+  padding-top: 200px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.service_block {
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+
+.service_block .w3-white{
+  padding: 15px;
+}
+
+.service_block img{
+    text-align: center;
+    width: 41px;
+    height: 48px;
 }

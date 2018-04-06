@@ -12,25 +12,28 @@
 	},
 	"matched": {
 		"product_name": [{
-				"image": "",
-				"title": "New York",
-				"status": "Fri 27 Nov 2016",
-				"phar": "Praesent tincidunt sed tellus ut rutrum sed vitae justo.",
-				"buttontxt": "Buy Tickets"
+				"image": "https://www.softobiz.com/wp-content/uploads/2016/08/mobile-development.png",
+				"title": "Mobile development",
+				"phar": "Mobile devices have already conquered the internet. We all love apps and just cannot imagine life without them.",
+				"buttontxt": "Explore »"
 			},
 			{
-				"image": "",
-				"title": "New York",
-				"status": "Fri 27 Nov 2016",
-				"phar": "Praesent tincidunt sed tellus ut rutrum sed vitae justo.",
-				"buttontxt": "Buy Tickets"
+				"image": "https://www.softobiz.com/wp-content/uploads/2016/08/Web-development.png",
+				"title": "Web development",
+				"phar": "Our specialization and focus is to deliver innovative and high quality custom web applications designs.",
+				"buttontxt": "Explore »"
 			},
 			{
-				"image": "",
-				"title": "New York",
-				"status": "Fri 27 Nov 2016",
-				"phar": "Praesent tincidunt sed tellus ut rutrum sed vitae justo.",
-				"buttontxt": "Buy Tickets"
+				"image": "https://www.softobiz.com/wp-content/uploads/2016/08/Web-development.png",
+				"title": "Software Product Development",
+				"phar": "Web based applications have come a long way to combine and streamline their systems and processes and minimize",
+				"buttontxt": "Explore »"
+			},
+			{
+				"image": "https://www.softobiz.com/wp-content/uploads/2016/08/User-Experience-UX-Design.png",
+				"title": "User Experience (UX) Design",
+				"phar": "Build apps comprising of excellent UI with the latest versions of HTML.",
+				"buttontxt": "Explore »"
 			}
 		]
 	}
