@@ -65,10 +65,29 @@ background-position: center center;
 
 .service_block .w3-white{
   padding: 15px;
+      height: 249px;
 }
 
 .service_block img{
     text-align: center;
     width: 41px;
     height: 48px;
+}
+
+div#about {
+    width: 100%;
+    float: left;
+    background-color: #fff !important;
+}
+
+div#services {
+    width: 100%;
+    float: left;
+    padding-top:40px;
+}
+
+footer.App-Footer {
+    width: 100%;
+    float: left;
+    text-align: center;
 }

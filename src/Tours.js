@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import Months from './Months';
 import content from './content.json';
 
 class Tours extends Component {
    render() {
       return (
-        <div className="w3-black" id="tour">
-           <div className="w3-container w3-content w3-padding-64">
-             <Months />
+        <div className="w3-black" id="services">
+           <div className="w3-container w3-content">
              <h2 className="w3-center">We Are A Creative Digital Agency</h2>
              <p className="w3-opacity w3-center"><i>Focused on Growing Brands Online</i></p><br></br>
              <div className="w3-row-padding w3-padding-32">
