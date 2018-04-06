@@ -11,12 +11,12 @@ class App extends Component {
             <div className="w3-top">
               <div className="w3-bar w3-black w3-card">
                 <Link className="w3-bar-item w3-button w3-padding-large" to={'/'}>Home</Link>
-                <Link className="w3-bar-item w3-button w3-padding-large" to={'/'}>About</Link>
+                <Link className="w3-bar-item w3-button w3-padding-large" to={'/About'}>About</Link>
               </div>
             </div>
             <Switch>
                <Route exact path='/' component={Home} />
-               <Route exact path='/' component={About} />
+               <Route exact path='/About' component={About} />
             </Switch>
           </div>
          </Router>
