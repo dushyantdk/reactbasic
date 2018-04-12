@@ -1,7 +1,19 @@
 import React, { Component } from 'react';
 import content from './content.json';
+import Ticketsmodel from './Ticketsmodel';
 
 class Tours extends Component {
+  constructor(props) {
+       super(props);
+       this.state = {
+          isModalOpen: false,
+       };
+       this.onView = this.onView.bind(this);
+   }  onView(){
+       this.setState({
+          isModalOpen: true
+        });
+  }
    render() {
       return (
         <div className="w3-black" id="services">
@@ -17,8 +29,9 @@ class Tours extends Component {
                    <p><b>{item.title}</b></p>
                    <p className="w3-opacity">{item.status}</p>
                    <p>{item.phar}</p>
-                   <button className="w3-button w3-black w3-margin-bottom">{item.buttontxt}</button>
+                   <button onClick={this.onView} className="w3-button w3-black w3-margin-bottom">{item.buttontxt}</button>
                  </div>
+                  {(this.state.isModalOpen===true) ? <Ticketsmodel /> : ''}
                  </div>
                </div>
                )}
