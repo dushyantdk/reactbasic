@@ -9,9 +9,15 @@ class Tours extends Component {
           isModalOpen: false,
        };
        this.onView = this.onView.bind(this);
-   }  onView(){
+   }
+   onView(){
        this.setState({
           isModalOpen: true
+        });
+      }
+        onClose(){
+            this.setState({
+               isModalOpen: false
         });
   }
    render() {
