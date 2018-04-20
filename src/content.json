@@ -37,5 +37,32 @@
 				"buttontxt": "Explore »"
 			}
 		]
+	},
+	"Faq": {
+		"faq_list": [{
+				"ques": "What is TEMPLATED?",
+				"ans": "TEMPLATED is a collection of free, Creative Commons-licensed CSS, HTML5, and responsive site templates, designed and built by Cherry, Doni, AJ, and occasionally our good friends Rafi (design) and Eduardo (code)."
+			},
+			{
+					"ques": "What is TEMPLATED?",
+					"ans": "TEMPLATED is a collection of free, Creative Commons-licensed CSS, HTML5, and responsive site templates, designed and built by Cherry, Doni, AJ, and occasionally our good friends Rafi (design) and Eduardo (code)."
+				},
+				{
+						"ques": "How am I allowed to use them?",
+						"ans": "All of our freebies are licensed under the Creative Commons Attribution license, so basically anything (even commercial stuff). The catch? Just give us a visible credit somewhere on the site (like a credits page or something)."
+					},
+					{
+							"ques": "What's a good app to work with these?",
+							"ans": "TEMPLATED is a collection of free, Creative Commons-licensed CSS, HTML5, and responsive site templates, designed and built by Cherry, Doni, AJ, and occasionally our good friends Rafi (design) and Eduardo (code)."
+						},
+						{
+								"ques": "What framework powers your responsive HTML5 templates?",
+								"ans": "TEMPLATED is a collection of free, Creative Commons-licensed CSS, HTML5, and responsive site templates, designed and built by Cherry, Doni, AJ, and occasionally our good friends Rafi (design) and Eduardo (code)."
+							},
+			{
+					"ques": "What is a Site Template?",
+					"ans": "A starting point for a website. Usually consists of at least one or more HTML files, a stylesheet, and optionally a few support images and scripts. The HTML is where your content lives (eg. text and photos), while the rest of the stuff handles the presentation of that content. See this article for a great explanation on how this works."
+			}
+		]
 	}
 }

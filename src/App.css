@@ -166,3 +166,15 @@ z-index: 99
 .form .register-form {
   display: none;
 }
+.faq_container {
+    width: 100%;
+    float: left;
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 21px;
+}
+
+.faq_container dd {
+    margin: 0;
+    font-size: 12px;
+}
