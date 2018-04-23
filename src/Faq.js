@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Slider from './Slider';
 import content from './content.json';
+import FaqlistingQ from './FaqlistingQ';
 import Footer from './Footer';
 
 class Faq extends Component {
@@ -12,12 +13,7 @@ class Faq extends Component {
               <h2 className="w3-center">Frequently Asked Questions</h2>
               <p className="w3-opacity w3-center"><i>A collection of 867 simple CSS, HTML5 & Responsive site templates, built by us and released for free under the Creative Commons.</i></p><br></br>
 
-              {content.Faq.faq_list.map(item =>
-                <div className="faq_container">
-                <dt><b>{item.ques}</b></dt>
-                <dd><p>{item.ans}</p></dd>
-                </div>
-              )}
+              <FaqlistingQ data={content} />
 
             </div>
          </div>
