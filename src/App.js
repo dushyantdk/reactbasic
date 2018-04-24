@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import Faq from './Faq';
+import Login from './Login';
 
 class App extends Component {
    render() {

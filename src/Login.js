@@ -1,7 +1,6 @@
-
 import React, { Component } from 'react';
 
-class Ticketsmodel  extends Component {
+class Login  extends Component {
   constructor(props) {
     super(props);
     this.state = {fname: '', ferror: '', lname: '', lerror:'', ename: '', eerror:''};
@@ -69,4 +68,4 @@ class Ticketsmodel  extends Component {
       );
    }
 }
-export default Ticketsmodel;
+export default Login;
