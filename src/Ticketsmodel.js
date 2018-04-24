@@ -1,16 +1,51 @@
 import React, { Component } from 'react';
 
 class Ticketsmodel extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {fname: '', ferror: '', lname: '', lerror:''};
+    this.userchanges = this.userchanges.bind(this);
+    this.lastchanges = this.lastchanges.bind(this);
+    this.fromsubmit = this.fromsubmit.bind(this);
+  }
+
+    userchanges(event) {
+       this.setState({fname: event.target.value});
+       if (this.state.fname != ''){
+        this.setState({ferror: ''});
+        }
+    }
+
+    lastchanges(event) {
+       this.setState({lname: event.target.value});
+       if (this.state.fname != ''){
+        this.setState({lerror: ''});
+        }
+    }
+
+    fromsubmit(event) {
+      if (this.state.fname === ''){
+       this.setState({ferror: 'Please enter first name'});
+       }
+       else if (this.state.lname === ''){
+       this.setState({lerror: 'Please enter last name'});
+       }
+       else{
+       alert('Hello: ' + this.state.fname + ' ' + this.state.lname);
+       }
+    }
    render() {
-      return (
+     return (
         <div>
           <div className="popup">
             <div className="login-page">
                 <div className="form">
                   <form className="login-form">
-                    <input placeholder="username" type="text" />
-                    <input placeholder="password" type="password" />
-                    <button>login</button>
+                    <input type="text" name="fname" value={this.state.fname} onChange={this.userchanges}  placeholder="FirstName" />
+                    <span className="error">{this.state.ferror}</span>
+                    <input type="text" name="lname" value={this.state.lname} onChange={this.lastchanges}  placeholder="LastNAme" />
+                    <span className="error">{this.state.lerror}</span>
+                    <input type="button" onClick={this.fromsubmit} value="Submit" />
                     <button onClick={this.onClose} className="cancel">Cancel</button>
                   </form>
                 </div>

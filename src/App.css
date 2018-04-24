@@ -178,3 +178,10 @@ z-index: 99
     margin: 0;
     font-size: 12px;
 }
+
+
+.error{
+  font-size: 12px;
+  float: left;
+  color: red;
+}

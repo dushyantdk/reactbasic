@@ -37,7 +37,7 @@ class Tours extends Component {
                    <p>{item.phar}</p>
                    <button onClick={this.onView} className="w3-button w3-black w3-margin-bottom">{item.buttontxt}</button>
                  </div>
-                  {(this.state.isModalOpen===true) ? <Ticketsmodel /> : ''}
+                  <div>{(this.state.isModalOpen===true) ? <Ticketsmodel /> : ''}</div>
                  </div>
                </div>
                )}
