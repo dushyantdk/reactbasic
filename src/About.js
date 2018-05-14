@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Slider from './Slider';
 import content from './content.json';
 import Footer from './Footer';
 
@@ -18,6 +17,7 @@ class About extends Component {
             </ul>
           </div>
        </div>
+       <Footer />
       </div>
      );
    }

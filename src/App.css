@@ -185,3 +185,21 @@ z-index: 99
   float: left;
   color: red;
 }
+
+
+.username{
+  color: red;
+}
+
+.profileimg {
+    width:100%;
+    height: 130px;
+}
+
+.profileimg img {
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    margin-top: 50px;
+    margin-top: 20px;
+}

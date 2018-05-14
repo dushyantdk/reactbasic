@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import content from './content.json';
+
 
 class FaqlistingQ extends Component {
    render() {

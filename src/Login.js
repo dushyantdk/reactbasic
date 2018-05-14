@@ -12,21 +12,21 @@ class Login  extends Component {
 
     userchanges(event) {
        this.setState({fname: event.target.value});
-       if (this.state.fname != ''){
+       if (this.state.fname !== ''){
         this.setState({ferror: ''});
         }
     }
 
     lastchanges(event) {
        this.setState({lname: event.target.value});
-       if (this.state.fname != ''){
+       if (this.state.fname !== ''){
         this.setState({lerror: ''});
         }
     }
 
     enamechanges(event) {
        this.setState({ename: event.target.value});
-       if (this.state.ename != ''){
+       if (this.state.ename !== ''){
         this.setState({eerror: ''});
         }
     }

@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import Slider from './Slider';
 import content from './content.json';
 import FaqlistingQ from './FaqlistingQ';
-import Footer from './Footer';
 
 class Faq extends Component {
    render() {

@@ -1,50 +1,24 @@
 
 import React, { Component } from 'react';
+import axios from 'axios'
 
 class Ticketsmodel  extends Component {
   constructor(props) {
     super(props);
-    this.state = {fname: '', ferror: '', lname: '', lerror:'', ename: '', eerror:''};
+    this.state = {fname: '', ferror: '', lname: '', lerror:'', ename: '', eerror:'', username:'', profileimg:''};
     this.userchanges = this.userchanges.bind(this);
-    this.lastchanges = this.lastchanges.bind(this);
-    this.enamechanges = this.enamechanges.bind(this);
     this.fromsubmit = this.fromsubmit.bind(this);
   }
 
     userchanges(event) {
        this.setState({fname: event.target.value});
-       if (this.state.fname != ''){
-        this.setState({ferror: ''});
-        }
     }
 
-    lastchanges(event) {
-       this.setState({lname: event.target.value});
-       if (this.state.fname != ''){
-        this.setState({lerror: ''});
-        }
-    }
 
-    enamechanges(event) {
-       this.setState({ename: event.target.value});
-       if (this.state.ename != ''){
-        this.setState({eerror: ''});
-        }
-    }
-
-    fromsubmit(event) {
-      if (this.state.fname === ''){
-       this.setState({ferror: 'Please enter first name'});
-       }
-      else if (this.state.lname === ''){
-       this.setState({lerror: 'Please enter last name'});
-       }
-       else if (this.state.ename === ''){
-        this.setState({eerror: 'Please enter last name'});
-        }
-      else{
-       alert('Hello: ' + this.state.fname + ' ' + this.state.lname);
-       }
+    fromsubmit() {
+      axios.get('https://api.github.com/users/' + this.state.fname)
+      .then(response => this.setState({username: response.data.name, profileimg: response.data.avatar_url}))
+      console.log(this.state.username, this.state.profileimg)
     }
    render() {
      return (
@@ -54,13 +28,10 @@ class Ticketsmodel  extends Component {
                 <div className="form">
                   <form className="login-form">
                     <input type="text" name="fname" value={this.state.fname} onChange={this.userchanges}  placeholder="FirstName" />
-                    <span className="error">{this.state.ferror}</span>
-                    <input type="text" name="lname" value={this.state.lname} onChange={this.lastchanges}  placeholder="LastNAme" />
-                    <span className="error">{this.state.lerror}</span>
-                    <input type="email" name="ename" value={this.state.ename} onChange={this.enamechanges}  placeholder="Email" />
-                    <span className="error">{this.state.eerror}</span>
                     <input type="button" onClick={this.fromsubmit} value="Submit" />
-                    <button onClick={this.onClose} className="cancel">Cancel</button>
+                    // <button onClick={this.onClose} className="cancel">Cancel</button>
+                    <div className="profileimg"> <img src={this.state.profileimg} alt="" /> </div>
+                    <p className="username">{this.state.username}</p>
                   </form>
                 </div>
             </div>
